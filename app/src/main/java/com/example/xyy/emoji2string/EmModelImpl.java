@@ -16,14 +16,11 @@ public class EmModelImpl implements EmModel {
     public void emojiToString(final String s1, final OnButtonFinishedListener listener) {
 
         if (TextUtils.isEmpty(s1)) {
-
             listener.onEditTextNull();//model层里面回调EditText为空的listener
-
         } else {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-
                     String string = EmojiUtil.getString(s1);
                     listener.onEmojiToStringSuccess(string);//model层里面回调表情转字符串成功的listener
 
@@ -36,14 +33,11 @@ public class EmModelImpl implements EmModel {
     public void stringToEmoji(final String s2, final OnButtonFinishedListener listener) {
 
         if (TextUtils.isEmpty(s2)) {
-
             listener.onTextViewNull();//model层里面回调TextView为空的listener
-
         } else {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-
                     String emoji = EmojiUtil.getEmoji(this, s2);
                     listener.onStringToEmojiSuccess(emoji);//model层里面回调字符串转表情的listener
 

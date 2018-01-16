@@ -36,13 +36,9 @@ public class MainActivity extends AppCompatActivity implements EmView, View.OnCl
     private TextView textView;
     private Button button1;
     private Button button2;
-
     private boolean progressShow;
-
     private EmPresenter emPresenter;
     private ProgressDialog pd;
-
-    private Button bt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
