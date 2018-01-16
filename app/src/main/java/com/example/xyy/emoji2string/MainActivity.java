@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity implements EmView, View.OnCl
     private EmPresenter emPresenter;
     private ProgressDialog pd;
 
+    private Button bt;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
