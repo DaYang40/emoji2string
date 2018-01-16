@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus" tools:ignore="NewApi">true</item>
+        <item name="android:windowTranslucentNavigation" tools:ignore="NewApi">false</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@android:color/transparent</item>
+    </style>
+
+</resources>
